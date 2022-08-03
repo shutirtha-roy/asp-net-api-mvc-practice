@@ -2,6 +2,6 @@
 {
     public interface ICourseModel
     {
-
+        public string Name { get; set; }
     }
 }

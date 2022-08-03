@@ -2,5 +2,6 @@
 {
     public class CourseModel : ICourseModel
     {
+        public string Name { get; set; }
     }
 }
