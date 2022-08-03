@@ -1,4 +1,5 @@
 using FirstDemo.Web.Data;
+using FirstDemo.Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,11 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+//builder.Services.AddTransient<ICourseModel, CourseModel>();
+builder.Services.AddSingleton<ICourseModel, CourseModel>();
+//builder.Services.AddScoped<ICourseModel, CourseModel>();
+
 
 var app = builder.Build();
 
