@@ -7,10 +7,21 @@ namespace FirstDemo.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        //private readonly ICourseModel _courseModel;
+        private static ICourseModel _courseModel;
+        public HomeController(ILogger<HomeController> logger, ICourseModel courseModel)
         {
             _logger = logger;
+
+            if(_courseModel != null)
+            {
+                if(courseModel == _courseModel)
+                {
+                    int x = 5;
+                }
+            }
+            else
+                _courseModel = courseModel;
         }
 
         public IActionResult Index()
