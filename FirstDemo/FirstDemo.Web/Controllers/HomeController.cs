@@ -26,11 +26,13 @@ namespace FirstDemo.Web.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("I am in index page");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            _logger.LogInformation("I am in privacy page");
             return View();
         }
 
