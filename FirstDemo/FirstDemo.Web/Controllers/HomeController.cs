@@ -32,6 +32,8 @@ namespace FirstDemo.Web.Controllers
 
         public IActionResult Privacy()
         {
+            //Guid id = new Guid("734D4A8F - 0FBE - 4FAB - 8DB2 - 066EDEE3D1FD");
+            //Guid id = new Guid();
             _logger.LogInformation("I am in privacy page");
             return View();
         }
