@@ -16,7 +16,7 @@ let conditions: boolean[] = [true, false, true];
 let coordinate: [number, number];
 //Initializing it
 coordinate = [2, 4];
-
+console.log(coordinate[0]);
 //Enum
 //enum Color {
 //    Red,
@@ -45,3 +45,72 @@ notSure = "using a string";
 notSure = true;
 let anyNumbers: any[] = [1, 2, 4, 5];
 anyNumbers = ['a', 'v', 'b'];
+
+//Void
+function warnUser(): void {
+    console.log("Let the person know!");
+}
+
+let unusable: void = undefined;
+unusable = null;
+
+//Null
+let u: undefined = undefined;
+let n: null = null;
+
+//Never
+function error(message: string): never {
+    throw new Error(message);
+}
+
+function fail(): never {
+    return error("Something failed")
+}
+
+function infiniteLoop(): never {
+    while (true) {
+
+    }
+}
+
+//object
+declare function create(o: object | null): void;
+create({ prop: 0 });
+create(null);
+
+let p: object = { name: "roy" }
+
+
+//Type assertion
+let someValue: string = "this is a string";
+let strLength: number = (<string>someValue).length;
+
+
+//Classes
+class Greeter {
+    greeting: string;
+
+    constructor(message: string) {
+        this.greeting = message;
+    }
+    greet() {
+        return "Hello, " + this.greeting;
+    }
+}
+
+let greeter = new Greeter("world");
+
+
+//Interface
+//Works like a method
+function printLabel(labeledObj: { label: string }) {
+    console.log(labeledObj.label);
+}
+
+let myObj = { size: 10, label: "Size 10 Object" };
+printLabel(myObj);
+
+interface LabeledValue {
+    label: string;
+}
+
