@@ -121,3 +121,39 @@ function printLabel1(labelObj: LabeledValue) {
 
 let myObj1 = { size: 10, label: "Size 10 Object" };
 printLabel(myObj1);
+
+interface IPerson {
+    name: string;
+    gender: string;
+}
+
+//interface IEmployee extends IPerson {
+//    empCode: number;
+//}
+
+//let empObj: IEmployee = {
+//    empCode: 1,
+//    name: "Bill",
+//    gender: "Male"
+//}
+
+interface IEmployee {
+    empCode: number;
+    name: string;
+    getSalary: (number) => number;
+}
+
+class Employee implements IEmployee {
+    empCode: number;
+    name: string;
+
+    constructor(code: number, name: string) {
+        this.empCode = code;
+        this.name = name;
+    }
+    getSalary(empCode: number): number {
+        return 2000;
+    }
+}
+
+let emp = new Employee(1, "Roy");
