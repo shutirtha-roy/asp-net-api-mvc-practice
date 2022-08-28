@@ -14,6 +14,7 @@ var conditions = [true, false, true];
 var coordinate;
 //Initializing it
 coordinate = [2, 4];
+console.log(coordinate[0]);
 //Enum
 //enum Color {
 //    Red,
@@ -39,4 +40,64 @@ notSure = "using a string";
 notSure = true;
 var anyNumbers = [1, 2, 4, 5];
 anyNumbers = ['a', 'v', 'b'];
+//Void
+function warnUser() {
+    console.log("Let the person know!");
+}
+var unusable = undefined;
+unusable = null;
+//Null
+var u = undefined;
+var n = null;
+//Never
+function error(message) {
+    throw new Error(message);
+}
+function fail() {
+    return error("Something failed");
+}
+function infiniteLoop() {
+    while (true) {
+    }
+}
+create({ prop: 0 });
+create(null);
+var p = { name: "roy" };
+//Type assertion
+var someValue = "this is a string";
+var strLength = someValue.length;
+//Classes
+var Greeter = /** @class */ (function () {
+    function Greeter(message) {
+        this.greeting = message;
+    }
+    Greeter.prototype.greet = function () {
+        return "Hello, " + this.greeting;
+    };
+    return Greeter;
+}());
+var greeter = new Greeter("world");
+//Interface
+//Works like a method
+function printLabel(labeledObj) {
+    console.log(labeledObj.label);
+}
+var myObj = { size: 10, label: "Size 10 Object" };
+printLabel(myObj);
+function printLabel1(labelObj) {
+    console.log(labelObj.label);
+}
+var myObj1 = { size: 10, label: "Size 10 Object" };
+printLabel(myObj1);
+var Employee = /** @class */ (function () {
+    function Employee(code, name) {
+        this.empCode = code;
+        this.name = name;
+    }
+    Employee.prototype.getSalary = function (empCode) {
+        return 2000;
+    };
+    return Employee;
+}());
+var emp = new Employee(1, "Roy");
 //# sourceMappingURL=demo.js.map
