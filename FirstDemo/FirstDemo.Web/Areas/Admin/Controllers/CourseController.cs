@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FirstDemo.Web.Areas.Admin.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FirstDemo.Web.Areas.Admin.Controllers
 {
@@ -12,7 +13,19 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            CourseCreateModel model = new CourseCreateModel();
+            return View(model);
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(CourseCreateModel model)
+        {
+            if(ModelState.IsValid)
+            {
+                await model.CreateCourse();
+            }
+
+            return View(model);
         }
     }
 }
