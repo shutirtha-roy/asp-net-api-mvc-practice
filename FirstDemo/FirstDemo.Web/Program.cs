@@ -1,34 +1,45 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using FirstDemo.Infrastructure;
+using FirstDemo.Infrastructure.DbContexts;
 using FirstDemo.Web;
-using FirstDemo.Web.Data;
 using FirstDemo.Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
+using System.Reflection;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
-builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => {
-    containerBuilder.RegisterModule(new WebModule());
-    //For example we can add Test Module
-});
-
-builder.Host.UseSerilog((ctx, lc) => lc
-    .MinimumLevel.Debug()
-    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-    .Enrich.FromLogContext()
-    .ReadFrom.Configuration(builder.Configuration));
 
 try
-{ 
+{
+    var builder = WebApplication.CreateBuilder(args);
+
+    // Add services to the container.
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    var assemblyName = Assembly.GetExecutingAssembly().FullName;
+
+    builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+    builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => {
+        containerBuilder.RegisterModule(new WebModule());
+        containerBuilder.RegisterModule(new InfrastructureModule(connectionString, assemblyName));
+    });
+
+    builder.Host.UseSerilog((ctx, lc) => lc
+        .MinimumLevel.Debug()
+        .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+        .Enrich.FromLogContext()
+        .ReadFrom.Configuration(builder.Configuration)
+    );
+
+
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(connectionString));
+        options.UseSqlServer(
+            connectionString,
+            m => m.MigrationsAssembly(assemblyName)
+        )
+    );
+
     builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
     builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
