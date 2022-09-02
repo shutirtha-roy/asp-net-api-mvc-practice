@@ -1,0 +1,16 @@
+﻿$myColor: blue;
+$myColorRed: red;
+
+@mixin someStyle($color) {
+    p {
+        background-color: $myColorRed;
+
+        button {
+            background-color: $color;
+
+            &:hover {
+                background-color: blue;
+            }
+        }
+    }
+}

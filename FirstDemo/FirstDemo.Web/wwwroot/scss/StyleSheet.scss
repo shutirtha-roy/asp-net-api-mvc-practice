@@ -1,0 +1,21 @@
+﻿@import "./header.scss";
+
+.box {
+    background-color: $myColor;
+    width: 100px;
+    height: 100px;
+}
+
+.mybutton {
+    background-color: $myColor;
+    width: 100px;
+    height: 100px;
+}
+
+@include someStyle(yellow);
+
+@function function_name($parameters) {
+    // code block
+
+    @return value;
+}
