@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using FirstDemo.Infrastructure.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace FirstDemo.Infrastructure.DbContexts
@@ -24,5 +25,6 @@ namespace FirstDemo.Infrastructure.DbContexts
             base.OnConfiguring(optionsBuilder);
         }
 
+        public DbSet<Course> Courses { get; set; }
     }
 }
