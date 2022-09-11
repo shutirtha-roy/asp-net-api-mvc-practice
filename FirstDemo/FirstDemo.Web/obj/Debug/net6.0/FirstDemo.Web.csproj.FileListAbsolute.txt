@@ -279,3 +279,5 @@ C:\Users\USER\source\repos\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debu
 C:\Users\USER\source\repos\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Serilog.Sinks.Console.dll
 C:\Users\USER\source\repos\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 C:\Users\USER\source\repos\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\USER\source\repos\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\FirstDemo.Infrastructure.dll
+C:\Users\USER\source\repos\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\FirstDemo.Infrastructure.pdb
