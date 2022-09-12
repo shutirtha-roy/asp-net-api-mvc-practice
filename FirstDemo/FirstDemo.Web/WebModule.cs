@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using FirstDemo.Web.Areas.Admin.Models;
 using FirstDemo.Web.Models;
 
 namespace FirstDemo.Web
@@ -12,6 +13,7 @@ namespace FirstDemo.Web
 
             builder.RegisterType<CourseModel>().AsSelf();
 
+            builder.RegisterType<CourseCreateModel>().AsSelf();
 
             base.Load(builder);
         }
