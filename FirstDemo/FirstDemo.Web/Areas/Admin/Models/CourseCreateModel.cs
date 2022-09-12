@@ -11,7 +11,8 @@ namespace FirstDemo.Web.Areas.Admin.Models
 
         internal async Task CreateCourse()
         {
-            throw new NotImplementedException();
+            if(ClassStartDate == DateTime.MinValue)
+                ClassStartDate = DateTime.Now.AddDays(7);
         }
     }
 }
