@@ -1,4 +1,5 @@
-﻿using FirstDemo.Web.Areas.Admin.Models;
+﻿using Autofac;
+using FirstDemo.Web.Areas.Admin.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstDemo.Web.Areas.Admin.Controllers
@@ -6,6 +7,15 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
     [Area("Admin")]
     public class CourseController : Controller
     {
+        private readonly ILifetimeScope _scope;
+        private readonly ILogger<CourseController> _logger;
+
+        public CourseController(ILogger<CourseController> logger, ILifetimeScope scope)
+        {
+            _logger = logger;
+            _scope = scope;
+        }
+
         public IActionResult Index()
         {
             return View();
