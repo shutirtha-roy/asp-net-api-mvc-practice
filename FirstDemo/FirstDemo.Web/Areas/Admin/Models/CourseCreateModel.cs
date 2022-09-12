@@ -1,4 +1,5 @@
-﻿using FirstDemo.Infrastructure.BusinessObjects;
+﻿using Autofac;
+using FirstDemo.Infrastructure.BusinessObjects;
 using FirstDemo.Infrastructure.Services;
 using System.ComponentModel.DataAnnotations;
 
@@ -10,11 +11,22 @@ namespace FirstDemo.Web.Areas.Admin.Models
         public string Title { get; set; }
         public double Fees { get; set; }
         public DateTime ClassStartDate { get; set; }
-        private readonly ICourseService _courseService;
+        private ICourseService _courseService;
+        private ILifetimeScope _scope;
 
+        public CourseCreateModel()
+        {
+
+        }
         public CourseCreateModel(ICourseService courseService)
         {
             _courseService = courseService;
+        }
+
+        internal void ResolveDependency(ILifetimeScope scope)
+        {
+            _scope = scope;
+            _courseService = _scope.Resolve<ICourseService>();
         }
 
         internal async Task CreateCourse()
