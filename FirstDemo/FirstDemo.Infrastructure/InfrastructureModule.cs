@@ -32,7 +32,6 @@ namespace FirstDemo.Infrastructure
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)
                 .InstancePerLifetimeScope();
 
-
             builder.RegisterType<CourseService>()
                 .As<ICourseService>()
                 .InstancePerLifetimeScope();
