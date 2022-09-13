@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using FirstDemo.Infrastructure.DbContexts;
+using FirstDemo.Infrastructure.Repositories;
 using FirstDemo.Infrastructure.Services;
 using System;
 using System.Collections.Generic;
@@ -34,6 +35,10 @@ namespace FirstDemo.Infrastructure
 
             builder.RegisterType<CourseService>()
                 .As<ICourseService>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<CourseRepository>()
+                .As<ICourseRepository>()
                 .InstancePerLifetimeScope();
 
             base.Load(builder);
