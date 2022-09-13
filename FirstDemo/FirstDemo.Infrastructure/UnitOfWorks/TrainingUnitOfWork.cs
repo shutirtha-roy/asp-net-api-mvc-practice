@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace FirstDemo.Infrastructure.UnitOfWorks
 
         public void Save()
         {
-            using Transaction transaction;
+            using SqlTransaction transaction;
 
             try
             {
