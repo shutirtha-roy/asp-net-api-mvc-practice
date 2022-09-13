@@ -2,6 +2,7 @@
 using FirstDemo.Infrastructure.DbContexts;
 using FirstDemo.Infrastructure.Repositories;
 using FirstDemo.Infrastructure.Services;
+using FirstDemo.Infrastructure.UnitOfWorks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +40,10 @@ namespace FirstDemo.Infrastructure
 
             builder.RegisterType<CourseRepository>()
                 .As<ICourseRepository>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<ApplicationUnitOfWork>()
+                .As<IApplicationUnitOfWork>()
                 .InstancePerLifetimeScope();
 
             base.Load(builder);

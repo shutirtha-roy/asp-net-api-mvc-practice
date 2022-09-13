@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FirstDemo.Infrastructure.UnitOfWorks
 {
-    public class ApplicationUnitOfWork : UnitOfWork
+    public class ApplicationUnitOfWork : UnitOfWork, IApplicationUnitOfWork
     {
         public ICourseRepository Courses { get; private set; }
         public ApplicationUnitOfWork(IApplicationDbContext dbContext,

@@ -23,7 +23,7 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
-            CourseCreateModel model = new CourseCreateModel();
+            CourseCreateModel model = _scope.Resolve<CourseCreateModel>();
             return View(model);
         }
 
@@ -32,6 +32,7 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
         {
             if(ModelState.IsValid)
             {
+                model.ResolveDependency(_scope);
                 await model.CreateCourse();
             }
 
