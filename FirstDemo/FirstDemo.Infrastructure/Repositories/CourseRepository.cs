@@ -1,4 +1,5 @@
-﻿using FirstDemo.Infrastructure.Entities;
+﻿using FirstDemo.Infrastructure.DbContexts;
+using FirstDemo.Infrastructure.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace FirstDemo.Infrastructure.Repositories
 {
     public class CourseRepository : Repository<Course, Guid>
     {
-        public CourseRepository(DbContext context) : base(context)
+        public CourseRepository(IApplicationDbContext context) : base((DbContext)context)
         {
         }
     }
