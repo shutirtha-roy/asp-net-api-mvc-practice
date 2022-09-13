@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FirstDemo.Infrastructure.Repositories
 {
-    public class CourseRepository : Repository<Course, Guid>
+    public class CourseRepository : Repository<Course, Guid>, ICourseRepository
     {
         public CourseRepository(IApplicationDbContext context) : base((DbContext)context)
         {
