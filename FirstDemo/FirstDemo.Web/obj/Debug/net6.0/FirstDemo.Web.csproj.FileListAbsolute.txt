@@ -565,3 +565,7 @@ F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\ref\FirstDemo.Web.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\FirstDemo.Web.pdb
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\FirstDemo.Web.genruntimeconfig.cache
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Azure.Services.AppAuthentication.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Serilog.Sinks.MSSqlServer.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Serilog.Sinks.PeriodicBatching.dll
