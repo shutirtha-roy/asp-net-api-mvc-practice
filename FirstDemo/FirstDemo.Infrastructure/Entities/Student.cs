@@ -12,5 +12,6 @@ namespace FirstDemo.Infrastructure.Entities
         public string Name { get; set; }
         public string Address { get; set; }
         public double Cgpa { get; set; }
+        public List<CourseRegistration> StudentCourses { get; set; }
     }
 }
