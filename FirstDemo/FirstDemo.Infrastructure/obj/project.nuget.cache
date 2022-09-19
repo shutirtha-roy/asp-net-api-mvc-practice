@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7obl9nZBCokS0cZE7oGQWQYWN5wSVjKoDcDoXS709dqHmVyycdr9XLchGpiW/DqSw4Uck06X62s5q69EflO6Ig==",
+  "dgSpecHash": "X46bxh0zy0KcOn8zLSrOfMRDO9aPKmJ3sD9Mxlas61Y7lUtAbXd+/tKZpkRWLQK4il1oXVT3fhLBvY+qTLQi7Q==",
   "success": true,
-  "projectFilePath": "F:\\Development\\ASP .NET\\Repository\\asp-net-mvc-practice\\FirstDemo\\FirstDemo.Infrastructure\\FirstDemo.Infrastructure.csproj",
+  "projectFilePath": "F:\\Development\\ASP .NET\\asp-net-mvc-practice\\FirstDemo\\FirstDemo.Infrastructure\\FirstDemo.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sthir\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\sthir\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
