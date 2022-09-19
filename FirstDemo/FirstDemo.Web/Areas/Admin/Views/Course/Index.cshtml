@@ -19,22 +19,6 @@
                             <th>ClassStartDate</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Trident</td>
-                            <td>Internet
-                                Explorer 4.0
-                            </td>
-                            <td>Win 95+</td>
-                        </tr>
-                        <tr>
-                            <td>Trident</td>
-                            <td>Internet
-                              Explorer 5.0
-                            </td>
-                            <td>Win 95+</td>
-                        </tr>
-                    </tbody>
                     <tfoot>
                         <tr>
                             <th>Title</th>
@@ -60,7 +44,13 @@
 
     <script>
         $(function () {
-            $("#courses").DataTable();
+          $("#courses").DataTable({
+              "processing": true,
+              "serverSide": true,
+              "ajax": {
+	           "url": "/admin/course/GetCourseData",
+              },
+          });
         });
     </script>
 }
