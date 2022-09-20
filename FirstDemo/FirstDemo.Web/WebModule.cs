@@ -15,6 +15,8 @@ namespace FirstDemo.Web
 
             builder.RegisterType<CourseCreateModel>().AsSelf();
 
+            builder.RegisterType<CourseListModel>().AsSelf();
+
             base.Load(builder);
         }
     }
