@@ -22,7 +22,7 @@ namespace FirstDemo.Web.Areas.Admin.Models
             _courseService = courseService;
         }
 
-        protected override void ResolveDependency(ILifetimeScope scope)
+        public override void ResolveDependency(ILifetimeScope scope)
         {
             base.ResolveDependency(scope);
             _courseService = _scope.Resolve<ICourseService>();
