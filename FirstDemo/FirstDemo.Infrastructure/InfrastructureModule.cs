@@ -46,6 +46,10 @@ namespace FirstDemo.Infrastructure
                 .As<IApplicationUnitOfWork>()
                 .InstancePerLifetimeScope();
 
+            builder.RegisterType<TimeService>()
+                .As<ITimeService>()
+                .InstancePerLifetimeScope();
+
             base.Load(builder);
         }
     }
