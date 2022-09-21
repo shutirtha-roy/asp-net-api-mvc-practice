@@ -42,7 +42,7 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
 
         public IActionResult GetCourseData()
         {
-            var dataTable = new DataTablesAjaxRequestModel(Request);
+            var dataTableModel = new DataTablesAjaxRequestModel(Request);
             var model = _scope.Resolve<CourseListModel>();
             return Json(model.GetPagedCourses(dataTableModel));
         }
