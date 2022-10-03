@@ -33,6 +33,30 @@ namespace FirstDemo.Infrastructure.Services
             _applicationUnitOfWork.Save();
         }
 
+        public void DeleteCourse(Guid id)
+        {
+            _applicationUnitOfWork.Courses.Remove(id);
+            _applicationUnitOfWork.Save();
+        }
+
+        public void EditCourse(CourseBO course)
+        {
+            var courseEO = _applicationUnitOfWork.Courses.GetById(course.Id);
+
+            if(courseEO != null)
+            {
+                courseEO.Title = course.Name;
+                courseEO.Fees = course.Fees;
+                courseEO.ClassStartDate = course.ClassStartDate;
+
+                _applicationUnitOfWork.Save();
+            }
+            else
+            {
+                throw new InvalidOperationException("Course was not found");
+            }
+        }
+
         public (int total, int totalDisplay, IList<CourseBO> records) GetCourses(int pageIndex, int pageSize, string searchText, string orderby)
         {
             (IList<CourseEO> data, int total, int totalDisplay) results = _applicationUnitOfWork
@@ -52,6 +76,18 @@ namespace FirstDemo.Infrastructure.Services
             }
 
             return (results.total, results.totalDisplay, courses);
+        }
+
+        public CourseBO GetCourses(Guid id)
+        {
+            var courseEO = _applicationUnitOfWork.Courses.GetById(id);
+
+            var courseBO = new CourseBO();
+            courseBO.Name = courseEO.Title;
+            courseBO.Fees = courseEO.Fees;
+            courseBO.ClassStartDate = courseEO.ClassStartDate;
+
+            return courseBO;
         }
     }
 }
