@@ -1,4 +1,5 @@
 ﻿using FirstDemo.Infrastructure.DbContexts;
+using FirstDemo.Infrastructure.Exceptions;
 using FirstDemo.Infrastructure.Repositories;
 using FirstDemo.Infrastructure.UnitOfWorks;
 using System;
@@ -22,6 +23,11 @@ namespace FirstDemo.Infrastructure.Services
 
         public void CreateCourse(CourseBO course)
         {
+            var count = _applicationUnitOfWork.Courses.GetCount(x => x.Title == course.Name);
+
+            if (count > 0)
+                throw new DuplicateException("Course title already exists");
+
             course.SetProperClassStartDate();
 
             CourseEO courseEntity = new CourseEO();

@@ -1,8 +1,9 @@
 ﻿using Autofac;
 using FirstDemo.Web.Areas.Admin.Models;
-using FirstDemo.Web.Codes;
+using FirstDemo.Web.Utilities;
 using FirstDemo.Web.Models;
 using Microsoft.AspNetCore.Mvc;
+using FirstDemo.Infrastructure.Exceptions;
 
 namespace FirstDemo.Web.Areas.Admin.Controllers
 {
@@ -32,12 +33,42 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CourseCreateModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 model.ResolveDependency(_scope);
-                await model.CreateCourse();
-            }
 
+                try
+                {
+                    await model.CreateCourse();
+                    TempData.Put<ResponseModel>("ResponseMessage", new ResponseModel
+                    {
+                        Message = "Successfully added a new course.",
+                        Type = ResponseTypes.Success
+                    });
+
+                    return RedirectToAction("Index");
+                }
+                catch (DuplicateException ioe)
+                {
+                    _logger.LogError(ioe, ioe.Message);
+
+                    TempData.Put<ResponseModel>("ResponseMessage", new ResponseModel
+                    {
+                        Message = ioe.Message,
+                        Type = ResponseTypes.Danger
+                    });
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, ex.Message);
+
+                    TempData.Put<ResponseModel>("ResponseMessage", new ResponseModel
+                    {
+                        Message = "There was a problem in creating course.",
+                        Type = ResponseTypes.Danger
+                    });
+                }
+            }
             return View(model);
         }
 
@@ -60,16 +91,23 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
                 {
                     model.EditCourse();
 
-                    TempData["ResponseMessage"] = "Successfuly updated course.";
-                    TempData["ResponseType"] = ResponseTypes.Success;
+                    TempData.Put<ResponseModel>("ResponseMessage", new ResponseModel
+                    {
+                        Message = "Successfully edited the course.",
+                        Type = ResponseTypes.Success
+                    });
 
                     return RedirectToAction("Index");
                 }
                 catch (Exception ex)
                 {
                     _logger.LogError(ex, ex.Message);
-                    TempData["ResponseMessage"] = "There was a problem in updating course.";
-                    TempData["ResponseType"] = ResponseTypes.Danger;
+
+                    TempData.Put<ResponseModel>("ResponseMessage", new ResponseModel
+                    {
+                        Message = "There was a problem in editing course.",
+                        Type = ResponseTypes.Danger
+                    });
                 }
             }
 
@@ -91,14 +129,21 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
                 var model = _scope.Resolve<CourseListModel>();
                 model.DeleteCourse(id);
 
-                TempData["ResponseMessage"] = "Successfully delete course.";
-                TempData["ResponseType"] = ResponseTypes.Success;
+                TempData.Put<ResponseModel>("ResponseMessage", new ResponseModel
+                {
+                    Message = "Successfully deleted the course.",
+                    Type = ResponseTypes.Success
+                });
             }
             catch(Exception ex)
             {
                 _logger.LogError(ex, ex.Message);
-                TempData["ResponseMessage"] = "There was a problem in deleting course.";
-                TempData["ResponseType"] = ResponseTypes.Danger;
+
+                TempData.Put<ResponseModel>("ResponseMessage", new ResponseModel
+                {
+                    Message = "There was a problem in deleting course.",
+                    Type = ResponseTypes.Danger
+                });
             }
 
             return RedirectToAction("Index");
