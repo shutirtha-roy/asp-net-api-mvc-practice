@@ -34,11 +34,11 @@ namespace FirstDemo.Web.Areas.Admin.Models
 
             if (course != null)
             {
-                Id = course.Id;
-                Title = course.Name;
-                Fees = course.Fees;
-                ClassStartDate = course.ClassStartDate;
-                //_mapper.Map(this, course);
+                //Id = course.Id;
+                //Title = course.Name;
+                //Fees = course.Fees;
+                //ClassStartDate = course.ClassStartDate;
+                _mapper.Map(course, this);
             }
         }
 
