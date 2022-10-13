@@ -1,4 +1,5 @@
-﻿using FirstDemo.Infrastructure.DbContexts;
+﻿using AutoMapper;
+using FirstDemo.Infrastructure.DbContexts;
 using FirstDemo.Infrastructure.Exceptions;
 using FirstDemo.Infrastructure.Repositories;
 using FirstDemo.Infrastructure.UnitOfWorks;
@@ -15,10 +16,12 @@ namespace FirstDemo.Infrastructure.Services
     public class CourseService : ICourseService
     {
         private readonly IApplicationUnitOfWork _applicationUnitOfWork;
+        private readonly IMapper _mapper;
 
-        public CourseService(IApplicationUnitOfWork applicationUnitOfWork)
+        public CourseService(IMapper mapper, IApplicationUnitOfWork applicationUnitOfWork)
         {
             _applicationUnitOfWork = applicationUnitOfWork;
+            _mapper = mapper;
         }
 
         public void CreateCourse(CourseBO course)
@@ -30,10 +33,11 @@ namespace FirstDemo.Infrastructure.Services
 
             course.SetProperClassStartDate();
 
-            CourseEO courseEntity = new CourseEO();
-            courseEntity.Title = course.Name;
-            courseEntity.Fees = course.Fees;
-            courseEntity.ClassStartDate = course.ClassStartDate;
+            CourseEO courseEntity = _mapper.Map<CourseEO>(course);
+            //CourseEO courseEntity = new CourseEO();
+            //courseEntity.Title = course.Name;
+            //courseEntity.Fees = course.Fees;
+            //courseEntity.ClassStartDate = course.ClassStartDate;
 
             _applicationUnitOfWork.Courses.Add(courseEntity);
             _applicationUnitOfWork.Save();
@@ -51,9 +55,10 @@ namespace FirstDemo.Infrastructure.Services
 
             if(courseEO != null)
             {
-                courseEO.Title = course.Name;
-                courseEO.Fees = course.Fees;
-                courseEO.ClassStartDate = course.ClassStartDate;
+                courseEO = _mapper.Map(course, courseEO);
+                //courseEO.Title = course.Name;
+                //courseEO.Fees = course.Fees;
+                //courseEO.ClassStartDate = course.ClassStartDate;
 
                 _applicationUnitOfWork.Save();
             }
@@ -72,13 +77,15 @@ namespace FirstDemo.Infrastructure.Services
 
             foreach (CourseEO courseEO in results.data)
             {
-                courses.Add(new CourseBO
-                {
-                    Id = courseEO.Id,
-                    Name = courseEO.Title,
-                    Fees = courseEO.Fees,
-                    ClassStartDate = courseEO.ClassStartDate
-                });
+                //courses.Add(new CourseBO
+                //{
+                //    Id = courseEO.Id,
+                //    Name = courseEO.Title,
+                //    Fees = courseEO.Fees,
+                //    ClassStartDate = courseEO.ClassStartDate
+                //});
+
+                courses.Add(_mapper.Map<CourseBO>(courseEO));
             }
 
             return (results.total, results.totalDisplay, courses);
@@ -88,10 +95,12 @@ namespace FirstDemo.Infrastructure.Services
         {
             var courseEO = _applicationUnitOfWork.Courses.GetById(id);
 
-            var courseBO = new CourseBO();
-            courseBO.Name = courseEO.Title;
-            courseBO.Fees = courseEO.Fees;
-            courseBO.ClassStartDate = courseEO.ClassStartDate;
+            CourseBO courseBO = _mapper.Map<CourseBO>(courseEO);
+
+            //var courseBO = new CourseBO();
+            //courseBO.Name = courseEO.Title;
+            //courseBO.Fees = courseEO.Fees;
+            //courseBO.ClassStartDate = courseEO.ClassStartDate;
 
             return courseBO;
         }

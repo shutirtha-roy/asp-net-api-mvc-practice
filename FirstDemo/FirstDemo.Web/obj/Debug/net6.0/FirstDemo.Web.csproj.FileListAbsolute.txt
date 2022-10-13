@@ -860,3 +860,5 @@ F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Build.Framework.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\scopedcss\Areas\Admin\Views\Shared\_ModalPartial.cshtml.rz.scp.css
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\AutoMapper.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
