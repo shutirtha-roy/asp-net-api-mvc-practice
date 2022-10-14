@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace FirstDemo.Infrastructure.Services
             _connectionString = config.GetConnectionString("DefaultConnection");
         }
 
-        private SqlCommand PrepareCommand(string sql, Dictionary<string, object> parameters)
+        private SqlCommand PrepareCommand(string sql, Dictionary<string, object> parameters, CommandType commandType)
         {
             SqlConnection sqlConnection = new SqlConnection();
             sqlConnection.ConnectionString = _connectionString;
@@ -26,6 +27,7 @@ namespace FirstDemo.Infrastructure.Services
             SqlCommand sqlCommand = sqlConnection.CreateCommand();
             sqlCommand.Connection = sqlConnection;
             sqlCommand.CommandText = sql;
+            sqlCommand.CommandType = commandType;
 
             if (parameters != null)
             {
@@ -38,9 +40,9 @@ namespace FirstDemo.Infrastructure.Services
             return sqlCommand;
         }
 
-        public async Task ExecuteCommandAsync(string command, Dictionary<string, object> parameters)
+        public async Task ExecuteCommandAsync(string command, Dictionary<string, object> parameters, CommandType commandType)
         {
-            using SqlCommand sqlCommand = PrepareCommand(command, parameters);
+            using SqlCommand sqlCommand = PrepareCommand(command, parameters, commandType);
 
 
             try
@@ -61,9 +63,9 @@ namespace FirstDemo.Infrastructure.Services
 
         }
 
-        public async Task<List<Dictionary<string, object>>> GetDataAsync(string command, Dictionary<string, object> parameters)
+        public async Task<List<Dictionary<string, object>>> GetDataAsync(string command, Dictionary<string, object> parameters, CommandType commandType)
         {
-            using SqlCommand sqlCommand = PrepareCommand(command, parameters);
+            using SqlCommand sqlCommand = PrepareCommand(command, parameters, commandType);
             List<Dictionary<string, object>> rows = new List<Dictionary<string, object>>();
 
             try

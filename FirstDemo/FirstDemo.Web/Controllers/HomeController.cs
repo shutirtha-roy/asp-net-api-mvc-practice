@@ -46,7 +46,7 @@ namespace FirstDemo.Web.Controllers
 
             //await _dataUtility.ExecuteCommandAsync(sql);
             //await _dataUtility.ExecuteCommandAsync(sql, parameters);
-            var data = _dataUtility.GetDataAsync(sql, null);
+            var data = _dataUtility.GetDataAsync(sql, null, System.Data.CommandType.Text);
 
             return View();
         }
