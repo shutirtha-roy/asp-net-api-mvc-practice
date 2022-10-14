@@ -42,11 +42,16 @@ namespace FirstDemo.Web.Controllers
             //parameters.Add("xTitle", "UX Design");
             //parameters.Add("xFees", 2000);
             //parameters.Add("xClassStartDate", _timeService.Now.AddDays(30));
-            string sql = "select * from courses";
+            //string sql = "select * from courses";
 
             //await _dataUtility.ExecuteCommandAsync(sql);
             //await _dataUtility.ExecuteCommandAsync(sql, parameters);
-            var data = _dataUtility.GetDataAsync(sql, null, System.Data.CommandType.Text);
+            //var data = _dataUtility.GetDataAsync(sql, null, System.Data.CommandType.Text);
+
+
+            string storedProcedureName = "GetCourses";
+            var data = await _dataUtility.GetDataAsync(storedProcedureName, null, System.Data.CommandType.StoredProcedure);
+
 
             return View();
         }
