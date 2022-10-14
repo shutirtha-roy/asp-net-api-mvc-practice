@@ -1,4 +1,5 @@
-﻿using FirstDemo.Web.Models;
+﻿using FirstDemo.Infrastructure.Services;
+using FirstDemo.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -9,7 +10,9 @@ namespace FirstDemo.Web.Controllers
         private readonly ILogger<HomeController> _logger;
         //private readonly ICourseModel _courseModel;
         private static ICourseModel _courseModel;
-        public HomeController(ILogger<HomeController> logger, ICourseModel courseModel)
+        private readonly IDataUtility _dataUtility;
+        private readonly ITimeService _timeService;
+        public HomeController(ILogger<HomeController> logger, ICourseModel courseModel, IDataUtility dataUtility, ITimeService timeService)
         {
             _logger = logger;
 
@@ -22,11 +25,29 @@ namespace FirstDemo.Web.Controllers
             }
             else
                 _courseModel = courseModel;
+
+            _dataUtility = dataUtility;
+            _timeService = timeService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             _logger.LogInformation("I am in index page");
+
+            //string sql = $"insert into Courses (Id, Title, Fees, ClassStartDate) values('{Guid.NewGuid()}', 'UX Design', 2000, '{_timeService.Now.AddDays(30).ToString("yyyy-MM-dd")}')";
+            //string sql = "delete from courses where title = 'UX Design'";
+            //string sql = $"insert into Courses (Id, Title, Fees, ClassStartDate) values(@xId, @xTitle, @xFees, @xClassStartDate)";
+            //IDictionary<string, object> parameters = new Dictionary<string, object>();
+            //parameters.Add("xId", Guid.NewGuid());
+            //parameters.Add("xTitle", "UX Design");
+            //parameters.Add("xFees", 2000);
+            //parameters.Add("xClassStartDate", _timeService.Now.AddDays(30));
+            string sql = "select * from courses";
+
+            //await _dataUtility.ExecuteCommandAsync(sql);
+            //await _dataUtility.ExecuteCommandAsync(sql, parameters);
+            var data = _dataUtility.GetDataAsync(sql, null);
+
             return View();
         }
 
