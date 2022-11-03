@@ -40,3 +40,5 @@ Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostExce
    at Program.<Main>$(String[] args) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\Program.cs:line 56
 2022-11-03 23:13:31.893 +06:00 [INF] Application Starting.
 2022-11-03 23:13:34.029 +06:00 [INF] I am in index page
+2022-11-03 23:31:37.496 +06:00 [INF] Application Starting.
+2022-11-03 23:31:39.772 +06:00 [INF] I am in index page
