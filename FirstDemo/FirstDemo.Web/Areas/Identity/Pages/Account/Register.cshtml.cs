@@ -68,7 +68,11 @@ namespace FirstDemo.Web.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
 
+<<<<<<< HEAD
+        public async Task<IActionResult> OnPostAsync(string returnUrl = null)
+=======
         public async Task<IActionResult> OnPostAsync(string? returnUrl = null)
+>>>>>>> fdc1bf65ae374f9dfc6c7f9b45a8bb791e3a273b
         {
             returnUrl ??= Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();

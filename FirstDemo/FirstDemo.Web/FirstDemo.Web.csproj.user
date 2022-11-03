@@ -15,6 +15,10 @@
     <ActiveDebugProfile>FirstDemo.Web</ActiveDebugProfile>
     <_SelectedScaffolderID>IdentityScaffolder</_SelectedScaffolderID>
     <_SelectedScaffolderCategoryPath>root/Identity</_SelectedScaffolderCategoryPath>
+<<<<<<< HEAD
+    <WebStackScaffolding_DbContextDialogWidth>650</WebStackScaffolding_DbContextDialogWidth>
+=======
+>>>>>>> fdc1bf65ae374f9dfc6c7f9b45a8bb791e3a273b
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

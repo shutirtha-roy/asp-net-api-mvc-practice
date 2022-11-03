@@ -862,6 +862,13 @@ F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+<<<<<<< HEAD
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+=======
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Azure.Core.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Azure.Identity.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -874,3 +881,4 @@ F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\System.Memory.Data.dll
+>>>>>>> fdc1bf65ae374f9dfc6c7f9b45a8bb791e3a273b

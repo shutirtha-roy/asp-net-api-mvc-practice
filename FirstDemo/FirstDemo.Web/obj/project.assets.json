@@ -11205,13 +11205,21 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "Autofac.Extensions.DependencyInjection >= 8.0.0",
       "FirstDemo.Infrastructure >= 1.0.0",
+<<<<<<< HEAD
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.0",
+=======
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.10",
+>>>>>>> fdc1bf65ae374f9dfc6c7f9b45a8bb791e3a273b
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.10",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
+<<<<<<< HEAD
+      "Microsoft.TypeScript.MSBuild >= 4.7.4",
+=======
       "Microsoft.TypeScript.MSBuild >= 4.8.4",
+>>>>>>> fdc1bf65ae374f9dfc6c7f9b45a8bb791e3a273b
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.10",
       "Microsoft.VisualStudio.Web.CodeGeneration.Utils >= 6.0.10",
       "Serilog.AspNetCore >= 6.0.1",
