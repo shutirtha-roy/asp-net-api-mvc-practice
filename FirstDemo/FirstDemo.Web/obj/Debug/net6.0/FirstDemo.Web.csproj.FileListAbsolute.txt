@@ -564,8 +564,6 @@ F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\ref\FirstDemo.Web.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\FirstDemo.Web.pdb
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\FirstDemo.Web.genruntimeconfig.cache
-F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Azure.Services.AppAuthentication.dll
-F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Serilog.Sinks.MSSqlServer.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Serilog.Sinks.PeriodicBatching.dll
 F:\Development\ASP .NET\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\appsettings.Development.json
@@ -862,3 +860,17 @@ F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\scopedcss\Areas\Admin\Views\Shared\_ModalPartial.cshtml.rz.scp.css
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\AutoMapper.dll
 F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Azure.Core.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Azure.Identity.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\System.Memory.Data.dll
