@@ -8,9 +8,11 @@ namespace FirstDemo.Web.Areas.Admin.Models
 {
     public class CourseCreateModel : BaseModel
     {
-        [Required]
+        [Required(ErrorMessage = "Title must be provided"), StringLength(200, ErrorMessage = "Title should be less than 200 characters")]
         public string Title { get; set; }
+        [Required, Range(1000, 50000)]
         public double Fees { get; set; }
+        [Required(ErrorMessage = "Valid date must be provided")]
         public DateTime ClassStartDate { get; set; }
         private ICourseService _courseService;
         private IMapper _mapper;

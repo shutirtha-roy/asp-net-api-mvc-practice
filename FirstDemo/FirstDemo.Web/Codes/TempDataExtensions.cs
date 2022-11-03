@@ -20,6 +20,7 @@ namespace FirstDemo.Web.Utilities
 
         public static T Peek<T>(this ITempDataDictionary tempData, string key) where T : class
         {
+            //tempData.Clear();
             object o = tempData.Peek(key);
             return o == null ? null : JsonSerializer.Deserialize<T>((string)o);
         }

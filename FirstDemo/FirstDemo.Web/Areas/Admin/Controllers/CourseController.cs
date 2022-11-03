@@ -51,6 +51,7 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
                 catch (DuplicateException ioe)
                 {
                     _logger.LogError(ioe, ioe.Message);
+                    ModelState.AddModelError("", ioe.Message);
 
                     TempData.Put<ResponseModel>("ResponseMessage", new ResponseModel
                     {
@@ -68,6 +69,23 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
                         Type = ResponseTypes.Danger
                     });
                 }
+            }
+            else
+            {
+                string messageText = string.Empty;
+                foreach (var message in ModelState.Values)
+                {
+                    for (int i = 0; i < message.Errors.Count; i++)
+                    {
+                        messageText += message.Errors[i].ErrorMessage;
+                    }
+                }
+
+                TempData.Put<ResponseModel>("ResponseMessage", new ResponseModel
+                {
+                    Message = messageText,
+                    Type = ResponseTypes.Danger
+                });
             }
             return View(model);
         }
