@@ -48,11 +48,7 @@ namespace FirstDemo.Infrastructure.DbContexts
                 .HasForeignKey(x => x.StudentId);
 
             modelBuilder.Entity<Student>()
-<<<<<<< HEAD
                 .HasData(new StudentSeed().Students);
-=======
-            .HasData(new StudentSeed().Students);
->>>>>>> f69fcc1dba01587271a870b26a0b4441cc6d6195
 
             base.OnModelCreating(modelBuilder);
         }

@@ -40,3 +40,17 @@ F:\Development\ASP .NET\asp-net-mvc-practice\FirstDemo\FirstDemo.Infrastructure\
 F:\Development\ASP .NET\asp-net-mvc-practice\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\ref\FirstDemo.Infrastructure.dll
 F:\Development\ASP .NET\asp-net-mvc-practice\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\FirstDemo.Infrastructure.pdb
 F:\Development\ASP .NET\asp-net-mvc-practice\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\FirstDemo.Infrastructure.genruntimeconfig.cache
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\bin\Debug\net6.0\FirstDemo.Infrastructure.deps.json
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\bin\Debug\net6.0\FirstDemo.Infrastructure.runtimeconfig.json
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\bin\Debug\net6.0\FirstDemo.Infrastructure.dll
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\bin\Debug\net6.0\ref\FirstDemo.Infrastructure.dll
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\bin\Debug\net6.0\FirstDemo.Infrastructure.pdb
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\FirstDemo.Infrastructure.csproj.AssemblyReference.cache
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\FirstDemo.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\FirstDemo.Infrastructure.AssemblyInfoInputs.cache
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\FirstDemo.Infrastructure.AssemblyInfo.cs
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\FirstDemo.Infrastructure.csproj.CoreCompileInputs.cache
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\FirstDemo.Infrastructure.dll
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\ref\FirstDemo.Infrastructure.dll
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\FirstDemo.Infrastructure.pdb
+F:\Development\ASP .NET\Repository\Correct\FirstDemo\FirstDemo.Infrastructure\obj\Debug\net6.0\FirstDemo.Infrastructure.genruntimeconfig.cache
