@@ -17,7 +17,7 @@ namespace FirstDemo.Web.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.0")
+                .HasAnnotation("ProductVersion", "6.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -78,6 +78,29 @@ namespace FirstDemo.Web.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Students");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("13530e69-aeb3-4a44-b6a0-714546093fe7"),
+                            Address = "Dhaka",
+                            Cgpa = 3.0,
+                            Name = "Samin"
+                        },
+                        new
+                        {
+                            Id = new Guid("2fa3a5d2-c1f9-48a8-9ce4-cc05c3b739ae"),
+                            Address = "Dhaka",
+                            Cgpa = 2.0,
+                            Name = "Apurba"
+                        },
+                        new
+                        {
+                            Id = new Guid("9fc6abea-0d6d-4168-b147-549f2a64a174"),
+                            Address = "Dhaka",
+                            Cgpa = 4.0,
+                            Name = "Asif"
+                        });
                 });
 
             modelBuilder.Entity("FirstDemo.Infrastructure.Entities.Topic", b =>
