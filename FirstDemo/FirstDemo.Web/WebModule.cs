@@ -21,6 +21,8 @@ namespace FirstDemo.Web
 
             builder.RegisterType<RegisterModel>().AsSelf();
 
+            builder.RegisterType<LoginModel>().AsSelf();
+
             base.Load(builder);
         }
     }
