@@ -1,0 +1,63 @@
+2022-11-08 19:25:10.304 +06:00 [INF] Application Starting.
+2022-11-08 19:25:12.374 +06:00 [INF] I am in index page
+2022-11-08 19:25:17.146 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.UI.Services.IEmailSender' while attempting to activate 'FirstDemo.Web.Controllers.AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method549(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-08 19:26:35.377 +06:00 [INF] Application Starting.
+2022-11-08 19:26:36.556 +06:00 [INF] I am in index page
+2022-11-08 19:27:28.803 +06:00 [FTL] Application start-up failed
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\Program.cs:line 97
+2022-11-08 19:30:08.122 +06:00 [FTL] Application start-up failed
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\Program.cs:line 97
+2022-11-08 19:40:31.030 +06:00 [FTL] Application start-up failed
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\Program.cs:line 97
+2022-11-08 19:43:26.297 +06:00 [INF] Application Starting.
+2022-11-08 19:43:27.860 +06:00 [INF] I am in index page
+2022-11-08 19:43:34.648 +06:00 [INF] I am in index page
+2022-11-08 19:43:55.640 +06:00 [INF] User logged in.
+2022-11-08 19:43:55.651 +06:00 [INF] I am in index page
+2022-11-08 19:44:04.899 +06:00 [INF] I am in index page
+2022-11-08 19:49:59.665 +06:00 [INF] Application Starting.
+2022-11-08 19:50:01.093 +06:00 [INF] I am in index page
+2022-11-08 19:51:13.673 +06:00 [INF] User created a new account with password.
+2022-11-08 19:51:13.775 +06:00 [INF] I am in index page
+2022-11-08 19:51:34.961 +06:00 [INF] I am in index page
+2022-11-08 19:51:37.835 +06:00 [INF] I am in index page
+2022-11-08 19:51:40.209 +06:00 [INF] I am in index page
+2022-11-08 19:51:51.847 +06:00 [INF] I am in index page
+2022-11-08 19:52:06.719 +06:00 [INF] I am in index page
+2022-11-08 19:52:23.019 +06:00 [INF] User logged in.
+2022-11-08 19:52:23.023 +06:00 [INF] I am in index page
+2022-11-08 19:52:36.911 +06:00 [INF] I am in index page

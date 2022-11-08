@@ -4,10 +4,12 @@ using FirstDemo.Web.Utilities;
 using FirstDemo.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using FirstDemo.Infrastructure.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FirstDemo.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class CourseController : Controller
     {
         private readonly ILifetimeScope _scope;

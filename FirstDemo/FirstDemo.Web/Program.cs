@@ -2,8 +2,11 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using FirstDemo.Infrastructure;
 using FirstDemo.Infrastructure.DbContexts;
+using FirstDemo.Infrastructure.Entities;
+using FirstDemo.Infrastructure.Services;
 using FirstDemo.Web;
 using FirstDemo.Web.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -44,8 +47,46 @@ try
 
     builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-    builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-        .AddEntityFrameworkStores<ApplicationDbContext>();
+    builder.Services
+    .AddIdentity<ApplicationUser, ApplicationRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddUserManager<ApplicationUserManager>()
+    .AddRoleManager<ApplicationRoleManager>()
+    .AddSignInManager<ApplicationSignInManager>()
+    .AddDefaultTokenProviders();
+
+    builder.Services.AddAuthentication()
+    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options => {
+        options.LoginPath = new PathString("/Account/Login");
+        options.AccessDeniedPath = new PathString("/Account/Login");
+        options.LogoutPath = new PathString("/Account/Login");
+        options.Cookie.Name = "FirstDemoPortal.Identity"; //We can customize cookie name
+        options.SlidingExpiration = true;
+        options.ExpireTimeSpan = TimeSpan.FromHours(1);
+    });
+
+    builder.Services.Configure<IdentityOptions>(options =>
+    {
+        // Password settings.
+        options.Password.RequireDigit = true;
+        options.Password.RequireLowercase = false;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequireUppercase = false;
+        options.Password.RequiredLength = 6;
+        options.Password.RequiredUniqueChars = 0;
+
+        // Lockout settings.
+        options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+        options.Lockout.MaxFailedAccessAttempts = 5;
+        options.Lockout.AllowedForNewUsers = true;
+
+        // User settings.
+        options.User.AllowedUserNameCharacters =
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+        options.User.RequireUniqueEmail = true;
+    });
+
+
     builder.Services.AddControllersWithViews();
 
     //builder.Services.AddTransient<ICourseModel, CourseModel>();
@@ -85,8 +126,6 @@ try
     app.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
-
-    app.MapRazorPages();
 
     app.Run();
 }
