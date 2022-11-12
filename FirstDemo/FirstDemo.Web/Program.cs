@@ -86,6 +86,16 @@ try
         options.User.RequireUniqueEmail = true;
     });
 
+    builder.Services.AddAuthorization(options =>
+    {
+        options.AddPolicy("CourseManagementPolicy", policy =>
+        {
+            policy.RequireAuthenticatedUser();
+            //policy.RequireRole("Admin");
+            policy.RequireRole("Teacher");
+        });
+    });
+
 
     builder.Services.AddControllersWithViews();
 

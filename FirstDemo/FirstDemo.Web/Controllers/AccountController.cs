@@ -2,6 +2,7 @@
 using FirstDemo.Infrastructure.Entities;
 using FirstDemo.Web.Models;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ using System.Text.Encodings.Web;
 
 namespace FirstDemo.Web.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
@@ -36,6 +38,7 @@ namespace FirstDemo.Web.Controllers
             _scope = scope;
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Register(string? returnUrl = null)
         {
             var model = _scope.Resolve<RegisterModel>();
@@ -45,6 +48,7 @@ namespace FirstDemo.Web.Controllers
         }
 
         [HttpPost, ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterModel model)
         {
             model.ReturnUrl ??= Url.Content("~/");
@@ -101,7 +105,7 @@ namespace FirstDemo.Web.Controllers
             return View(model);
         }
 
-
+        [AllowAnonymous]
         public async Task<IActionResult> Login(string? returnUrl = null)
         {
             var model = _scope.Resolve<LoginModel>();
@@ -117,6 +121,7 @@ namespace FirstDemo.Web.Controllers
         }
 
         [HttpPost, ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginModel model)
         {
             model.ReturnUrl ??= Url.Content("~/");
@@ -168,6 +173,7 @@ namespace FirstDemo.Web.Controllers
             }
         }
 
+        [AllowAnonymous]
         public IActionResult AccessDenied()
         {
             return View();

@@ -60,3 +60,12 @@ System.InvalidOperationException: The view 'AccessDenied' was not found. The fol
 2022-11-12 18:38:55.131 +06:00 [INF] I am in index page
 2022-11-12 18:39:04.070 +06:00 [INF] I am in index page
 2022-11-12 18:39:06.127 +06:00 [INF] I am in index page
+2022-11-12 18:53:17.660 +06:00 [INF] Application Starting.
+2022-11-12 18:53:19.195 +06:00 [INF] I am in index page
+2022-11-12 18:53:30.479 +06:00 [INF] User logged in.
+2022-11-12 18:53:30.519 +06:00 [INF] I am in index page
+2022-11-12 18:53:54.117 +06:00 [INF] I am in index page
+2022-11-12 18:53:57.059 +06:00 [INF] I am in index page
+2022-11-12 18:54:07.976 +06:00 [INF] User logged in.
+2022-11-12 18:54:07.980 +06:00 [INF] I am in index page
+2022-11-12 18:54:13.227 +06:00 [INF] I am in index page
