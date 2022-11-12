@@ -137,5 +137,20 @@ namespace FirstDemo.Web.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Logout(string returnUrl = null)
+        {
+            await _signInManager.SignOutAsync();
+
+            if(returnUrl != null)
+            {
+                return LocalRedirect(returnUrl);
+            }
+            else
+            {
+                return RedirectToAction();
+            }
+        }
+
     }
 }
