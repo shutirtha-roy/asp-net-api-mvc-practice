@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace FirstDemo.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+    [Authorize(Roles = "Admin,Teacher")]
     public class CourseController : Controller
     {
         private readonly ILifetimeScope _scope;
@@ -21,6 +21,7 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
             _scope = scope;
         }
 
+        
         public IActionResult Index()
         {
             return View();

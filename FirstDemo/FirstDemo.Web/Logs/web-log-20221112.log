@@ -1,0 +1,62 @@
+2022-11-12 17:50:51.668 +06:00 [INF] Application Starting.
+2022-11-12 17:50:53.717 +06:00 [INF] I am in index page
+2022-11-12 17:52:50.860 +06:00 [INF] User logged in.
+2022-11-12 17:52:50.869 +06:00 [INF] I am in index page
+2022-11-12 17:55:45.008 +06:00 [INF] Application Starting.
+2022-11-12 17:55:46.725 +06:00 [INF] I am in index page
+2022-11-12 17:55:51.607 +06:00 [INF] I am in index page
+2022-11-12 18:26:08.364 +06:00 [INF] Application Starting.
+2022-11-12 18:26:09.718 +06:00 [INF] I am in index page
+2022-11-12 18:27:24.574 +06:00 [INF] Application Starting.
+2022-11-12 18:27:25.965 +06:00 [INF] I am in index page
+2022-11-12 18:27:45.602 +06:00 [INF] User logged in.
+2022-11-12 18:27:45.611 +06:00 [INF] I am in index page
+2022-11-12 18:29:08.446 +06:00 [INF] I am in index page
+2022-11-12 18:29:37.693 +06:00 [INF] User created a new account with password.
+2022-11-12 18:29:37.804 +06:00 [INF] I am in index page
+2022-11-12 18:30:15.519 +06:00 [INF] I am in index page
+2022-11-12 18:30:17.943 +06:00 [INF] I am in index page
+2022-11-12 18:30:28.334 +06:00 [INF] User logged in.
+2022-11-12 18:30:28.338 +06:00 [INF] I am in index page
+2022-11-12 18:30:51.936 +06:00 [INF] I am in index page
+2022-11-12 18:31:06.992 +06:00 [INF] I am in index page
+2022-11-12 18:32:45.228 +06:00 [INF] Application Starting.
+2022-11-12 18:32:46.675 +06:00 [INF] I am in index page
+2022-11-12 18:35:44.979 +06:00 [INF] Application Starting.
+2022-11-12 18:35:46.468 +06:00 [INF] I am in index page
+2022-11-12 18:36:35.209 +06:00 [INF] Application Starting.
+2022-11-12 18:36:36.835 +06:00 [INF] I am in index page
+2022-11-12 18:36:41.362 +06:00 [ERR] The view 'AccessDenied' was not found. Searched locations: ["/Views/Account/AccessDenied.cshtml","/Views/Shared/AccessDenied.cshtml"]
+2022-11-12 18:36:41.623 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'AccessDenied' was not found. The following locations were searched:
+/Views/Account/AccessDenied.cshtml
+/Views/Shared/AccessDenied.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-12 18:38:10.008 +06:00 [INF] Application Starting.
+2022-11-12 18:38:11.511 +06:00 [INF] I am in index page
+2022-11-12 18:38:25.091 +06:00 [INF] I am in index page
+2022-11-12 18:38:38.488 +06:00 [INF] User logged in.
+2022-11-12 18:38:38.492 +06:00 [INF] I am in index page
+2022-11-12 18:38:44.679 +06:00 [INF] I am in index page
+2022-11-12 18:38:55.127 +06:00 [INF] User logged in.
+2022-11-12 18:38:55.131 +06:00 [INF] I am in index page
+2022-11-12 18:39:04.070 +06:00 [INF] I am in index page
+2022-11-12 18:39:06.127 +06:00 [INF] I am in index page
