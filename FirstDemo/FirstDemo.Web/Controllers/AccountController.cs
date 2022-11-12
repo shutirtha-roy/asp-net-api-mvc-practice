@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Encodings.Web;
 
@@ -72,7 +73,12 @@ namespace FirstDemo.Web.Controllers
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    await _userManager.AddToRolesAsync(user, new string[] { "Teacher" });
+                    //await _userManager.AddToRolesAsync(user, new string[] { "Teacher" });
+                    await _userManager.AddClaimsAsync(user, new Claim[]
+                    {
+                        new Claim("ViewCourse", "true"),
+                        new Claim("CreateCourse", "true")
+                    });
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));

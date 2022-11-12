@@ -91,8 +91,20 @@ try
         options.AddPolicy("CourseManagementPolicy", policy =>
         {
             policy.RequireAuthenticatedUser();
-            //policy.RequireRole("Admin");
+            policy.RequireRole("Admin");
             policy.RequireRole("Teacher");
+        });
+
+        options.AddPolicy("CourseViewPolicy", policy =>
+        {
+            policy.RequireAuthenticatedUser();
+            policy.RequireClaim("ViewCourse", "true");
+        });
+
+        options.AddPolicy("CourseCreatePolicy", policy =>
+        {
+            policy.RequireAuthenticatedUser();
+            policy.RequireClaim("CreateCourse", "true");
         });
     });
 

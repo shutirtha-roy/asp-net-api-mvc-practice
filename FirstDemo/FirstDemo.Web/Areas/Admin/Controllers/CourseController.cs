@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Authorization;
 namespace FirstDemo.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Policy = "CourseManagementPolicy")]
     public class CourseController : Controller
     {
         private readonly ILifetimeScope _scope;
@@ -21,18 +20,20 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
             _scope = scope;
         }
 
-        
+        [Authorize(Policy = "CourseViewPolicy")]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Authorize(Policy = "CourseViewPolicy")]
         public IActionResult Create()
         {
             CourseCreateModel model = _scope.Resolve<CourseCreateModel>();
             return View(model);
         }
 
+        [Authorize(Policy = "CourseCreatePolicy")]
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CourseCreateModel model)
         {
