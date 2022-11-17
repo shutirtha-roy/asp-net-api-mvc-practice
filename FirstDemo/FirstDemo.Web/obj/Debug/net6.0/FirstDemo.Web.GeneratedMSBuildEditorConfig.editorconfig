@@ -8,105 +8,105 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FirstDemo.Web
 build_property.RootNamespace = FirstDemo.Web
-build_property.ProjectDir = F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\
+build_property.ProjectDir = D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web
+build_property.MSBuildProjectDirectory = D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Course/Create.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Course/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Course/Edit.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Course/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Course/Index.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Course/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Home/Index.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/Error.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/_LoginPartial.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/_ResponsePartial.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/_ResponsePartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9SZXNwb25zZVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/_ViewImports.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/_ViewStart.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Account/AccessDenied.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Account/Login.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Account/Register.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Home/Index.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Home/Privacy.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Home/Test.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Home/Test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Shared/Error.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Shared/_LoginPartial.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/_ViewImports.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/_ViewStart.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hxfp3m189k
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/_ModalPartial.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Areas/Admin/Views/Shared/_ModalPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Nb2RhbFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1mpis42ezd
 
-[F:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Shared/_Layout.cshtml]
+[D:/Development/ASP .NET/Repository/asp-net-mvc-practice/FirstDemo/FirstDemo.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ij70clho45
