@@ -15,7 +15,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "abb235c1-6979-4822-8296-07421bcb361e": {
+      "ProjectGuid": "abb235c1-6979-4822-8296-07421bcb361e",
+      "DisplayName": "FirstDemo.API",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
