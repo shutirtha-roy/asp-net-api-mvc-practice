@@ -78,3 +78,4 @@ D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\
 D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\bin\Debug\net6.0\FirstDemo.Infrastructure.dll
 D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\bin\Debug\net6.0\FirstDemo.Infrastructure.pdb
+D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

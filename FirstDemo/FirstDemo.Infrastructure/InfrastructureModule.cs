@@ -50,10 +50,13 @@ namespace FirstDemo.Infrastructure
                 .As<ITimeService>()
                 .InstancePerLifetimeScope();
 
-            builder.RegisterType<DataUtility>().
-                As<IDataUtility>()
+            builder.RegisterType<DataUtility>()
+                .As<IDataUtility>()
                 .InstancePerLifetimeScope();
 
+            builder.RegisterType<TokenService>()
+                .As<ITokenService>()
+                .InstancePerLifetimeScope();
 
             base.Load(builder);
         }
