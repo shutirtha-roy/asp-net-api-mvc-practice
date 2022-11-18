@@ -65,8 +65,8 @@ namespace FirstDemo.Web.Controllers
                 };
 
                 var result = await _userManager.CreateAsync(user, model.Password);
-                await _roleManager.CreateAsync(new ApplicationRole("Admin"));
-                await _roleManager.CreateAsync(new ApplicationRole("Teacher"));
+                //await _roleManager.CreateAsync(new ApplicationRole("Admin"));
+                //await _roleManager.CreateAsync(new ApplicationRole("Teacher"));
 
 
                 if (result.Succeeded)
