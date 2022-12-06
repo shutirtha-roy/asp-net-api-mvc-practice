@@ -9,5 +9,8 @@ namespace FirstDemo.Infrastructure.Services
         void DeleteCourse(Guid id);
         Course GetCourses(Guid id);
         void EditCourse(Course course);
+        IList<Course> GetCourses();
+        Course GetCourse(string name);
+        Course GetCourse(Guid id);
     }
 }

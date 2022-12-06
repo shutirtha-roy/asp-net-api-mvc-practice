@@ -104,5 +104,38 @@ namespace FirstDemo.Infrastructure.Services
 
             return courseBO;
         }
+
+        public CourseBO GetCourse(string name)
+        {
+            var courseEO = _applicationUnitOfWork.Courses.Get(x => x.Title.Equals(name), "")
+                .FirstOrDefault();
+
+            CourseBO courseBO = _mapper.Map<CourseBO>(courseEO);
+
+            return courseBO;
+        }
+
+        public CourseBO GetCourse(Guid id)
+        {
+            var courseEO = _applicationUnitOfWork.Courses.GetById(id);
+
+            CourseBO courseBO = _mapper.Map<CourseBO>(courseEO);
+
+            return courseBO;
+        }
+
+        public IList<CourseBO> GetCourses()
+        {
+            var coursesEO = _applicationUnitOfWork.Courses.GetAll();
+
+            IList<CourseBO> courses = new List<CourseBO>();
+
+            foreach (CourseEO courseEO in coursesEO)
+            {
+                courses.Add(_mapper.Map<CourseBO>(courseEO));
+            }
+
+            return courses;
+        }
     }
 }
