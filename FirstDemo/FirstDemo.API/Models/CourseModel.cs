@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using Autofac;
+using AutoMapper;
 using FirstDemo.Infrastructure.Services;
 
 namespace FirstDemo.API.Models
@@ -23,5 +24,13 @@ namespace FirstDemo.API.Models
             _courseService = courseService;
             _mapper = mapper;
         }
+
+        public void ResolveDependency(ILifetimeScope scope)
+        {
+            _courseService = scope.Resolve<ICourseService>();
+            _mapper = scope.Resolve<IMapper>();
+        }
+
+
     }
 }
