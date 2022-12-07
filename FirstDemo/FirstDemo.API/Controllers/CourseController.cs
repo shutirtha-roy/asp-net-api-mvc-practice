@@ -69,6 +69,23 @@ namespace FirstDemo.API.Controllers
             }
         }
 
+        [HttpPut]
+        public IActionResult Put(CourseModel model)
+        {
+            try
+            {
+                model.ResolveDependency(_scope);
+                model.UpdateCourse();
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Couldn't edit course");
+                return BadRequest();
+            }
+        }
+
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
