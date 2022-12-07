@@ -1,0 +1,73 @@
+2022-12-07 10:32:23.153 +06:00 [INF] Application is starting
+2022-12-07 11:58:44.163 +06:00 [INF] Application is starting
+2022-12-07 11:59:21.689 +06:00 [ERR] Couldn't delete course
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CourseModel -> Course
+FirstDemo.API.Models.CourseModel -> FirstDemo.Infrastructure.BusinessObjects.Course
+   at lambda_method420(Closure , Object , Course , ResolutionContext )
+   at FirstDemo.API.Models.CourseModel.CreateCourse() in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Models\CourseModel.cs:line 48
+   at FirstDemo.API.Controllers.CourseController.Post(CourseModel model) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Controllers\CourseController.cs:line 61
+2022-12-07 12:01:42.228 +06:00 [ERR] Couldn't delete course
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CourseModel -> Course
+FirstDemo.API.Models.CourseModel -> FirstDemo.Infrastructure.BusinessObjects.Course
+   at lambda_method420(Closure , Object , Course , ResolutionContext )
+   at FirstDemo.API.Models.CourseModel.CreateCourse() in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Models\CourseModel.cs:line 48
+   at FirstDemo.API.Controllers.CourseController.Post(CourseModel model) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Controllers\CourseController.cs:line 61
+2022-12-07 12:05:46.428 +06:00 [INF] Application is starting
+2022-12-07 12:06:30.238 +06:00 [INF] Application is starting
+2022-12-07 12:06:39.087 +06:00 [ERR] Couldn't delete course
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CourseModel -> Course
+FirstDemo.API.Models.CourseModel -> FirstDemo.Infrastructure.BusinessObjects.Course
+   at lambda_method420(Closure , Object , Course , ResolutionContext )
+   at FirstDemo.API.Models.CourseModel.CreateCourse() in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Models\CourseModel.cs:line 48
+   at FirstDemo.API.Controllers.CourseController.Post(CourseModel model) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Controllers\CourseController.cs:line 61
+2022-12-07 12:07:02.848 +06:00 [ERR] Couldn't delete course
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CourseModel -> Course
+FirstDemo.API.Models.CourseModel -> FirstDemo.Infrastructure.BusinessObjects.Course
+   at lambda_method420(Closure , Object , Course , ResolutionContext )
+   at FirstDemo.API.Models.CourseModel.CreateCourse() in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Models\CourseModel.cs:line 48
+   at FirstDemo.API.Controllers.CourseController.Post(CourseModel model) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Controllers\CourseController.cs:line 61
+2022-12-07 12:07:05.793 +06:00 [ERR] Couldn't delete course
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CourseModel -> Course
+FirstDemo.API.Models.CourseModel -> FirstDemo.Infrastructure.BusinessObjects.Course
+   at lambda_method420(Closure , Object , Course , ResolutionContext )
+   at FirstDemo.API.Models.CourseModel.CreateCourse() in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Models\CourseModel.cs:line 48
+   at FirstDemo.API.Controllers.CourseController.Post(CourseModel model) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Controllers\CourseController.cs:line 61
+2022-12-07 12:07:06.822 +06:00 [ERR] Couldn't delete course
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CourseModel -> Course
+FirstDemo.API.Models.CourseModel -> FirstDemo.Infrastructure.BusinessObjects.Course
+   at lambda_method420(Closure , Object , Course , ResolutionContext )
+   at FirstDemo.API.Models.CourseModel.CreateCourse() in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Models\CourseModel.cs:line 48
+   at FirstDemo.API.Controllers.CourseController.Post(CourseModel model) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Controllers\CourseController.cs:line 61
+2022-12-07 12:07:07.259 +06:00 [ERR] Couldn't delete course
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CourseModel -> Course
+FirstDemo.API.Models.CourseModel -> FirstDemo.Infrastructure.BusinessObjects.Course
+   at lambda_method420(Closure , Object , Course , ResolutionContext )
+   at FirstDemo.API.Models.CourseModel.CreateCourse() in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Models\CourseModel.cs:line 48
+   at FirstDemo.API.Controllers.CourseController.Post(CourseModel model) in F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.API\Controllers\CourseController.cs:line 61
+2022-12-07 12:08:30.155 +06:00 [INF] Application is starting
+2022-12-07 12:12:01.029 +06:00 [INF] Application is starting
+2022-12-07 12:14:48.478 +06:00 [INF] Application is starting
+2022-12-07 12:17:36.826 +06:00 [INF] Application is starting
+2022-12-07 12:22:38.130 +06:00 [INF] Application is starting
+2022-12-07 12:26:19.325 +06:00 [INF] Application is starting
