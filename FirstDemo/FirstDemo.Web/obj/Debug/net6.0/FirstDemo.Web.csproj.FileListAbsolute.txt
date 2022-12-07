@@ -1469,3 +1469,4 @@ D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\
 D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\ref\FirstDemo.Web.dll
 D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\FirstDemo.Web.pdb
 D:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\obj\Debug\net6.0\FirstDemo.Web.genruntimeconfig.cache
+F:\Development\ASP .NET\Repository\asp-net-mvc-practice\FirstDemo\FirstDemo.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
