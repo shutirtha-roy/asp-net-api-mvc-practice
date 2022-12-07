@@ -8,6 +8,7 @@ using FirstDemo.Infrastructure.Services;
 using FirstDemo.Web;
 using FirstDemo.Web.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -114,9 +115,19 @@ try
             policy.RequireAuthenticatedUser();
             policy.Requirements.Add(new CourseViewRequirement());
         });
+
+        options.AddPolicy("ApiRequirementPolicy", policy =>
+        {
+            policy.AuthenticationSchemes.Clear();
+            policy.AuthenticationSchemes.Add(JwtBearerDefaults.AuthenticationScheme);
+            policy.RequireAuthenticatedUser();
+            policy.Requirements.Add(new ApiRequirement());
+        });
     });
 
     builder.Services.AddSingleton<IAuthorizationHandler, CourseViewRequirementHandler>();
+
+    builder.Services.AddSingleton<IAuthorizationHandler, ApiRequirementHandler>();
 
     builder.Services.AddControllersWithViews();
 
