@@ -51,5 +51,38 @@ namespace FirstDemo.API.Controllers
             var model = _scope.Resolve<CourseModel>();
             return model.GetCourse(name);
         }
+
+        [HttpPost()]
+        public IActionResult Post(CourseModel model)
+        {
+            try
+            {
+                model.ResolveDependency(_scope);
+                model.CreateCourse();
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Couldn't delete course");
+                return BadRequest();
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id)
+        {
+            try
+            {
+                var model = _scope.Resolve<CourseModel>();
+                model.DeleteCourse(id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Couldn't delete course");
+                return BadRequest();
+            }
+        }
     }
 }
