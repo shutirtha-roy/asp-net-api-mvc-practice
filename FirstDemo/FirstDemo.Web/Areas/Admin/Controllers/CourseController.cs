@@ -136,12 +136,12 @@ namespace FirstDemo.Web.Areas.Admin.Controllers
             return View(model);
         }
 
-        public IActionResult GetCourseData()
-        {
-            var dataTableModel = new DataTablesAjaxRequestModel(Request);
-            var model = _scope.Resolve<CourseListModel>();
-            return Json(model.GetPagedCourses(dataTableModel));
-        }
+        //public IActionResult GetCourseData()
+        //{
+        //    var dataTableModel = new DataTablesAjaxRequestModel(Request);
+        //    var model = _scope.Resolve<CourseListModel>();
+        //    return Json(model.GetPagedCourses(dataTableModel));
+        //}
 
         [ValidateAntiForgeryToken, HttpPost]
         public IActionResult Delete(Guid id)

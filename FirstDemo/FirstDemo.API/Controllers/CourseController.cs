@@ -3,12 +3,14 @@ using FirstDemo.API.Models;
 using FirstDemo.Infrastructure.BusinessObjects;
 using FirstDemo.Infrastructure.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstDemo.API.Controllers
 {
     [Route("api/v3/[controller]")]
+    [EnableCors("AllowSites")]
     [ApiController]
     public class CourseController : ControllerBase
     {
@@ -22,19 +24,28 @@ namespace FirstDemo.API.Controllers
         }
 
         [HttpGet, Authorize(Policy = "CourseViewRequirementPolicy")]
-        public IEnumerable<Course> Get()
+        public object Get()
         {
-            try
-            {
-                var model = _scope.Resolve<CourseModel>();
-                return model.GetCourses();
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Couldn't get courses");
-                return null;
-            }
+            var dataTablesModel = new DataTablesAjaxRequestModel(Request);
+            var model = _scope.Resolve<CourseModel>();
+            var data = model.GetPagedCourses(dataTablesModel);
+            return data;
         }
+
+        //[HttpGet, Authorize(Policy = "CourseViewRequirementPolicy")]
+        //public IEnumerable<Course> Get()
+        //{
+        //    try
+        //    {
+        //        var model = _scope.Resolve<CourseModel>();
+        //        return model.GetCourses();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _logger.LogError(ex, "Couldn't get courses");
+        //        return null;
+        //    }
+        //}
 
         [HttpGet("{id}")]
         [Authorize(Policy = "CourseViewRequirementPolicy")]

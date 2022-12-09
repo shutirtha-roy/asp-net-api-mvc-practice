@@ -19,29 +19,29 @@ namespace FirstDemo.Web.Areas.Admin.Models
             _courseService = _scope.Resolve<ICourseService>();
         }
 
-        internal object? GetPagedCourses(DataTablesAjaxRequestModel model)
-        {
-            var data = _courseService.GetCourses(
-                model.PageIndex,
-                model.PageSize,
-                model.SearchText,
-                model.GetSortText(new string[] { "Title", "Fees", "ClassStartDate" }));
+        //internal object? GetPagedCourses(DataTablesAjaxRequestModel model)
+        //{
+        //    var data = _courseService.GetCourses(
+        //        model.PageIndex,
+        //        model.PageSize,
+        //        model.SearchText,
+        //        model.GetSortText(new string[] { "Title", "Fees", "ClassStartDate" }));
 
-            return new
-            {
-                recordsTotal = data.total,
-                recordsFiltered = data.totalDisplay,
-                data = (from record in data.records
-                    select new string[]
-                    {
-                        record.Name,
-                        record.Fees.ToString(),
-                        record.ClassStartDate.ToString(),
-                        record.Id.ToString()
-                    }
-                ).ToArray()
-            };
-        }
+        //    return new
+        //    {
+        //        recordsTotal = data.total,
+        //        recordsFiltered = data.totalDisplay,
+        //        data = (from record in data.records
+        //            select new string[]
+        //            {
+        //                record.Name,
+        //                record.Fees.ToString(),
+        //                record.ClassStartDate.ToString(),
+        //                record.Id.ToString()
+        //            }
+        //        ).ToArray()
+        //    };
+        //}
 
         internal void DeleteCourse(Guid id)
         {

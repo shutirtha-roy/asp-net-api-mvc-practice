@@ -140,6 +140,13 @@ try
         });
     });
 
+    builder.Services.AddSession(options =>
+    {
+        options.IdleTimeout = TimeSpan.FromMinutes(30);
+        options.Cookie.HttpOnly = true;
+        options.Cookie.IsEssential = true;
+    });
+
     builder.Services.AddSingleton<IAuthorizationHandler, CourseViewRequirementHandler>();
 
     builder.Services.AddSingleton<IAuthorizationHandler, ApiRequirementHandler>();
@@ -174,6 +181,8 @@ try
 
     app.UseAuthentication();
     app.UseAuthorization();
+
+    app.UseSession();
 
     //At first it will check area then it will check the default one
     app.MapControllerRoute(

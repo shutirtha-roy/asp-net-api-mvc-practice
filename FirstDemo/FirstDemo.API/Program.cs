@@ -102,6 +102,17 @@ try
         });
     });
 
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowSites",
+           builder =>
+           {
+               builder.WithOrigins("https://localhost:7255", "https://localhost:7129")
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+           });
+    });
+
     builder.Services.AddSingleton<IAuthorizationHandler, CourseViewRequirementHandler>();
 
     builder.Services.AddControllers();
@@ -121,6 +132,8 @@ try
     }
 
     app.UseHttpsRedirection();
+
+    app.UseCors();
 
     app.UseAuthorization();
 
