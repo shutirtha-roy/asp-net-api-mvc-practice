@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using FirstDemo.Infrastructure.Entities;
+using FirstDemo.Infrastructure.Services;
 using FirstDemo.Web.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
@@ -21,6 +22,7 @@ namespace FirstDemo.Web.Controllers
         private readonly ILogger<AccountController> _logger;
         private readonly RoleManager<ApplicationRole> _roleManager;
         //private readonly IEmailSender _emailSender;
+        private readonly ITokenService _tokenService;
         private readonly ILifetimeScope _scope;
 
         public AccountController(
@@ -28,7 +30,8 @@ namespace FirstDemo.Web.Controllers
             SignInManager<ApplicationUser> signInManager,
             RoleManager<ApplicationRole> roleManager,
             ILogger<AccountController> logger,
-            ILifetimeScope scope
+            ILifetimeScope scope,
+            ITokenService tokenService
             /*IEmailSender emailSender*/)
         {
             _userManager = userManager;
@@ -37,6 +40,7 @@ namespace FirstDemo.Web.Controllers
             _roleManager = roleManager;
             //_emailSender = emailSender;
             _scope = scope;
+            _tokenService = tokenService;
         }
 
         [AllowAnonymous]
@@ -141,7 +145,11 @@ namespace FirstDemo.Web.Controllers
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User logged in.");
+                    var user = await _userManager.FindByEmailAsync(model.Email);
+                    var claims = (await _userManager.GetClaimsAsync(user)).ToArray();
+                    var token = await _tokenService.GetJwtToken(claims);
+                    HttpContext.Session.SetString("token", token);
+
                     return LocalRedirect(model.ReturnUrl);
                 }
                 if (result.RequiresTwoFactor)
