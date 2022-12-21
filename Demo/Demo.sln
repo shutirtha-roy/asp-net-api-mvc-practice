@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLib", "DemoLib\DemoLib.csproj", "{E8B37C40-6A0A-479F-A312-BE738A09D087}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0755AF65-8052-49AE-81A2-440A29DD91A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLib.Tests", "DemoLib.Tests\DemoLib.Tests.csproj", "{48FEB5FB-D860-431B-9085-646F454B63A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{E8B37C40-6A0A-479F-A312-BE738A09D087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8B37C40-6A0A-479F-A312-BE738A09D087}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8B37C40-6A0A-479F-A312-BE738A09D087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48FEB5FB-D860-431B-9085-646F454B63A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48FEB5FB-D860-431B-9085-646F454B63A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48FEB5FB-D860-431B-9085-646F454B63A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48FEB5FB-D860-431B-9085-646F454B63A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48FEB5FB-D860-431B-9085-646F454B63A6} = {0755AF65-8052-49AE-81A2-440A29DD91A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8AD0ACE4-093C-42F8-A684-72B3D0D22C03}
