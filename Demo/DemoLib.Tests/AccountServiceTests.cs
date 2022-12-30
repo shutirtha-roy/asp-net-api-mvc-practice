@@ -48,5 +48,19 @@ namespace DemoLib.Tests
 
             _emailSender.VerifyAll();
         }
+
+        [Test, Category("UnitTest")]
+        public void GetCampaignReport_ValidCampaignName_SendsEmail()
+        {
+            string campaignName = "Test";
+            string email = "roy@gmail.com";
+
+            _emailSender.Setup(x => x.GetEmailSeen(campaignName)).Returns(5).Verifiable();
+            _emailSender.Setup(x => x.Send(email)).Verifiable();
+
+            _accountService.GetCampaignReport(campaignName);
+
+            _emailSender.VerifyAll();
+        }
     }
 }

@@ -20,5 +20,16 @@ namespace DemoLib
             //EmailSender emailSender = new EmailSender();
             _emailSender.Send(email);
         }
+
+        public void GetCampaignReport(string campaignName)
+        {
+            if (!string.IsNullOrWhiteSpace(campaignName))
+            {
+                int count = _emailSender.GetEmailSeen(campaignName);
+
+                if (count > 0)
+                    _emailSender.Send("roy@gmail.com");
+            }
+        }
     }
 }
