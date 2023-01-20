@@ -1,6 +1,6 @@
 ﻿namespace OOP.MockClasses
 {
-    internal class SqlParameter
+    public class SqlParameter
     {
         private string v;
         private object username;

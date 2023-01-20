@@ -1,6 +1,6 @@
 ﻿namespace OOP.MockClasses
 {
-    internal class MimeMessage
+    public class MimeMessage
     {
         public MimeMessage()
         {

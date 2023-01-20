@@ -1,6 +1,6 @@
 ﻿namespace OOP.MockClasses
 {
-    internal class SqlCommand
+    public class SqlCommand
     {
         private string cmd;
         private SqlConnection connection;

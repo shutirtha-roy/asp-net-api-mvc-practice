@@ -1,6 +1,6 @@
 ﻿namespace OOP.MockClasses
 {
-    internal class MailboxAddress
+    public class MailboxAddress
     {
         private string v1;
         private string v2;

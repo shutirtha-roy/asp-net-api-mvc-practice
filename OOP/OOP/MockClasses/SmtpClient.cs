@@ -1,6 +1,6 @@
 ﻿namespace OOP.MockClasses
 {
-    internal class SmtpClient : IDisposable
+    public class SmtpClient : IDisposable
     {
         internal void Connect(string v1, int v2, bool v3)
         {

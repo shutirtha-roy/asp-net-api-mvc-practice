@@ -1,6 +1,6 @@
 ﻿namespace OOP.MockClasses
 {
-    internal class TextPart
+    public class TextPart
     {
         private string v;
 
