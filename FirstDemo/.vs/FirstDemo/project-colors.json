@@ -20,7 +20,32 @@
       "ProjectGuid": "abb235c1-6979-4822-8296-07421bcb361e",
       "DisplayName": "FirstDemo.API",
       "ColorIndex": 2
+    },
+    "8bc6743e-2175-428d-81a5-975e61e96ec4": {
+      "ProjectGuid": "8bc6743e-2175-428d-81a5-975e61e96ec4",
+      "DisplayName": "FirstDemo.Infrastructure.Tests",
+      "ColorIndex": 3
+    },
+    "d4326f99-ff82-403a-9561-da52e615b5f8": {
+      "ProjectGuid": "d4326f99-ff82-403a-9561-da52e615b5f8",
+      "DisplayName": "FirstDemo.Infrastructure.Tests",
+      "ColorIndex": 4
+    },
+    "d492ec2f-b102-4e7d-b83d-89ee4c258a04": {
+      "ProjectGuid": "d492ec2f-b102-4e7d-b83d-89ee4c258a04",
+      "DisplayName": "FirstDemo.Infrastructure.Tests",
+      "ColorIndex": 5
+    },
+    "3c643abf-d6ce-4fd9-be51-8534456a0591": {
+      "ProjectGuid": "3c643abf-d6ce-4fd9-be51-8534456a0591",
+      "DisplayName": "FirstDemo.Web.Tests",
+      "ColorIndex": 6
+    },
+    "29d8d606-af42-4291-b934-621690396fa1": {
+      "ProjectGuid": "29d8d606-af42-4291-b934-621690396fa1",
+      "DisplayName": "FirstDemo.Web.Tests",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 8
 }
