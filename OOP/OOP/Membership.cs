@@ -9,7 +9,7 @@ namespace OOP
             new InputOutput().TakeInput();
             new Validator().ValidatedUsername("samin");
             new DataUtility().StoreData("samin", "password", "samin@gmail.com");
-            new EmailService().SendWelcomeEmail();
+            new HTMLEmailService("samin@gmail.com", "samin", "", 2).SendWelcomeEmail("samin@gmail.com", "samin", "");
         }
     }
 }
