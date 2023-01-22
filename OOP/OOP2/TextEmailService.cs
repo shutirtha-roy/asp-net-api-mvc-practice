@@ -1,6 +1,7 @@
-﻿using OOP.MockClasses;
+﻿using OOP;
+using OOP.MockClasses;
 
-namespace OOP
+namespace OOP2
 {
     public class TextEmailService : EmailService
     {

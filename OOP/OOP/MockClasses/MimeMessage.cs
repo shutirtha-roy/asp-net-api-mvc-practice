@@ -6,9 +6,9 @@
         {
         }
 
-        public List<object> From { get; internal set; }
-        public List<object> To { get; internal set; }
-        public string Subject { get; internal set; }
-        public TextPart Body { get; internal set; }
+        public List<object> From { get; set; }
+        public List<object> To { get; set; }
+        public string Subject { get; set; }
+        public TextPart Body { get; set; }
     }
 }

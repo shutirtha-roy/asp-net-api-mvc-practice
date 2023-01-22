@@ -2,15 +2,15 @@
 
 namespace OOP
 {
-    internal class BodyBuilder
+    public class BodyBuilder
     {
         public BodyBuilder()
         {
         }
 
-        public string HtmlBody { get; internal set; }
+        public string HtmlBody { get; set; }
 
-        internal TextPart ToMessageBody()
+        public TextPart ToMessageBody()
         {
             throw new NotImplementedException();
         }

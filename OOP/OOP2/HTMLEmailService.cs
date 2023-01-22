@@ -1,4 +1,6 @@
-﻿namespace OOP
+﻿using OOP;
+
+namespace OOP2
 {
     public class HTMLEmailService : EmailService
     {
