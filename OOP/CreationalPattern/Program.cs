@@ -1,6 +1,7 @@
 ﻿using CreationalPattern.AbstractFactory;
 using CreationalPattern.Builder;
 using CreationalPattern.Factory;
+using System.Text;
 
 //Factory Pattern
 string choice = Console.ReadLine();
@@ -26,3 +27,11 @@ CardBuilder cardBuilder = new CardBuilder()
     .AddReceiverName("Samin");
 
 Card card = cardBuilder.Build();
+
+//String Builder Example which also uses Builder pattern
+StringBuilder stringBuilder = new StringBuilder();
+stringBuilder.Append(".NET 5.0")
+    .Append(".NET 6.0")
+    .Append(".NET 7.0");
+
+string message = stringBuilder.ToString();
