@@ -16,7 +16,9 @@ export class AppComponent {
   constructor(private courseService: CourseService) { }
 
   update() {
-    this.courses = this.courseService.getCourses();
+    this.courseService.getCourses().subscribe((data : ICourse[]) =>
+      (this.courses = data)
+    );
   }
 
   printMessage1() {
