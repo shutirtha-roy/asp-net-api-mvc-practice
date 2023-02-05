@@ -15,10 +15,13 @@ export class AppComponent {
 
   constructor(private courseService: CourseService) { }
 
-  update() {
-    this.courseService.getCourses().subscribe((data : ICourse[]) =>
-      (this.courses = data)
-    );
+  update(){
+	  this.courseService.getToken().subscribe((token:string) =>
+  	(
+    	this.courseService.getCourses(token).subscribe((data:ICourse[]) =>
+      	(this.courses = data)
+    	)
+  	));
   }
 
   printMessage1() {
